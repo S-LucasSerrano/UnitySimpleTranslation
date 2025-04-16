@@ -1,0 +1,15 @@
+{
+	"name": "com.lucasserrano.translation",
+	"displayName": "Unity Simple Translation",
+	"version":"1.0.0",
+	"description": "A small and simple package for translating text in Unity.",
+	"author": "S. Lucas Serrano",
+	"samples":
+	[
+		{
+			"displayName":"Basic Usage",
+			"description":"Small sample showing how to use the package.",
+			"path":"Samples/Usage"
+		}
+	]
+}
