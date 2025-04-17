@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 517582005}
   - component: {fileID: 517582004}
   m_Layer: 5
-  m_Name: Button en
+  m_Name: Button EN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,10 +887,7 @@ MonoBehaviour:
   m_Text: Lorem ipsum dolor sit amet consectetur adipiscing elit mollis eleifend,
     orci felis dis massa gravida erat laoreet iaculis nec, lectus pretium tempus
     curae metus in auctor class. Nunc dapibus urna nisi fames sociis elementum tellus
-    eu aliquet, nostra blandit faucibus pharetra nisl sapien interdum mi, pellentesque
-    est suscipit facilisi a natoque tincidunt sodales. Elementum arcu odio eget eleifend
-    rhoncus consequat sociis platea, penatibus erat venenatis fermentum inceptos
-    fusce dis sem, laoreet aenean vel ante euismod curae iaculis.
+    eu aliquet, nostra blandit.
 --- !u!222 &1551750827
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1102,7 +1099,7 @@ GameObject:
   - component: {fileID: 2062303438}
   - component: {fileID: 2062303437}
   m_Layer: 5
-  m_Name: Button es
+  m_Name: Button ES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1254,7 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86358861ec41de449bfeb1b0fdf020ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csvFiles:
+  files:
   - {fileID: 4900000, guid: 31d5bc8ef8248ea45961a3426c8b5b15, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

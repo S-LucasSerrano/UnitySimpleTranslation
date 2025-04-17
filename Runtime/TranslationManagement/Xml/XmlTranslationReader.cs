@@ -20,30 +20,24 @@ namespace LucasSerrano.Translation
 	/// Add translations to the dictionary from XML files. </summary>
 
 	[AddComponentMenu("Lucas Serrano/Translation/XML Translation Reader")]
-	public class XmlTranslationReader : MonoBehaviour
+	public class XmlTranslationReader : TranslationFileReader
 	{
-		[Space][SerializeField] TextAsset[] xmlFiles = { };
-
-
 		// ---------------------------------------------------------------------
 
-		private void Awake()		
+		protected override void ReadFile(TextAsset file)
 		{
-			foreach (var file in xmlFiles)
+			XmlDocument xmlDoc = new XmlDocument();
+			xmlDoc.LoadXml(file.text);
+
+			foreach (XmlNode parentNode in xmlDoc.DocumentElement)
 			{
-				XmlDocument xmlDoc = new XmlDocument();
-				xmlDoc.LoadXml(file.text);
-
-				foreach (XmlNode parentNode in xmlDoc.DocumentElement)
+				foreach (XmlNode childNode in parentNode.ChildNodes)
 				{
-					foreach (XmlNode childNode in parentNode.ChildNodes)
-					{
-						var id =			parentNode.Name;
-						var language =		childNode.Name;
-						var translation =	childNode.InnerText;
+					var id = parentNode.Name;
+					var language = childNode.Name;
+					var translation = childNode.InnerText;
 
-						TranslationDictionary.AddEntry(language, id, translation);
-					}
+					TranslationDictionary.AddEntry(language, id, translation);
 				}
 			}
 		}

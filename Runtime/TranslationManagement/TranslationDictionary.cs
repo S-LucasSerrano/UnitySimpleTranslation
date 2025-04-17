@@ -4,6 +4,13 @@ using UnityEngine;
 
 namespace LucasSerrano.Translation
 {
+	/* When adding entries to the dictionary have in count:
+	 *		- Languages and ids are case-insensitive. [Español], [ESPAÑOL] and [español] are all the same.
+			- It is sensitive to accents and other special character. [Ingles] and [Inglés] will be considered different languages.
+			- Ids can only appear once across all translation files.
+				But languages can appear once on each file. The language columns can be in a different order for each file.
+	 */
+
 	/// <summary>
 	/// Static class containing all texts in all languages. </summary>
 	public static class TranslationDictionary

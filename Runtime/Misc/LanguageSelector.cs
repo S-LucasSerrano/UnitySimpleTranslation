@@ -45,8 +45,8 @@ namespace LucasSerrano.Translation
 		[System.Serializable]
         private class LanguageButtom
         {
-            public string language;
-            public Button button;
+            public string language = "";
+            public Button button = null;
         }
     }
 }
